@@ -1,0 +1,1 @@
+# template_android_project_java_xml

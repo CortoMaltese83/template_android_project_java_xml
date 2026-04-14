@@ -2,7 +2,6 @@ package com.example.myjavaandroidapp;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.myjavaandroidapp.fragments.HomeFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,13 +9,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        if (savedInstanceState == null) {
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.fragment_container, new HomeFragment())
-                    .commit();
-        }
     }
 
 }
